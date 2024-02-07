@@ -5,9 +5,6 @@ import cookieParser from 'cookie-parser';
 import compression from 'compression';
 import cors from 'cors';
 import { db } from '../config/connection';
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 const app = express();
 const PORT = 3000;

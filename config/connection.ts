@@ -1,7 +1,6 @@
 import mongoose, { ConnectOptions } from "mongoose";
 
-mongoose.connect(process.env.MONGODB_URI, {
-    dbName: "video-api",
+mongoose.connect("mongodb://127.0.0.1:27017/video-api", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 } as ConnectOptions);
